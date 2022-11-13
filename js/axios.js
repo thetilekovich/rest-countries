@@ -25,6 +25,8 @@ let start = 0
 
 function getCount(data){
     count === 12 && start === 0 ? preBtn.style.opacity = '0.5' : preBtn.style.opacity = '1'
+    count === 240 && start === 228 ? nextBtn.style.opacity = '0.5' : nextBtn.style.opacity = '1'
+console.log(count, start)
     let a = []
     for(let i = start; i < count; i++){
         a +=  `<div class="count-item col-md-3 col-sm-5 col-12 text-center">
@@ -46,6 +48,8 @@ function getCount(data){
                 preBtn.style.display = 'none'
                 nextBtn.style.display = 'none'
                 $('.previous').addEventListener('click', () => {
+                    preBtn.style.display = 'block'
+                    nextBtn.style.display = 'block'
                     getCount(countries)
                     $('.previous').style.display = 'none'
                 })
@@ -62,8 +66,10 @@ preBtn.addEventListener('click', () => {
     getCount(countries)
 })
 nextBtn.addEventListener('click', () => {
-    count += 12
-    start += 12
+    if(count !== 240 && start !== 228){
+        count += 12
+        start += 12
+    }   
     getCount(countries)
 })
 
