@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <h1 class="text-white">Logo</h1>
+                </div>
+                <div class="menu ">
+                    <a href="#">Home</a>
+                    <a href="html/app.html">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="option">
+        <div class="container">
+            <div class="option">
+                <div class="row mb-3">
+                    <div class="col-12 text-center">
+                        <input placeholder="Name of the country" class="search-input mb-3" type="search">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <div class="d-flex flex-column align-items-center m-2">
+                            <select name="select" id="select">
+                                <option value="0">Sort by</option>
+                                <option value="area">Area</option>
+                                <option value="population">Population</option>
+                                <option value="aZ">A-Z</option>
+
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column align-items-center m-2">
+                             <select name="select" id="filter">
+                                <option selected value="0">Region</option>
+                                <option value="asia">Asia</option>
+                                <option value="africa">Africa</option>\
+                                <option value="americas">Americas</option>
+                                <option value="oceania">Oceania</option>
+                                <option value="europe">Europe</option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row d-flex ">
+                <div class="preve justify-content-start col-12">
+                    <button class="previous  btn btn-primary justify-self-start">Previous</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="countries">
+        <div class="container">
+            <div class="countries">
+                <div class="row count-gen d-flex justify-content-between text-white">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between">
+                        <button class="pre-btn btn btn-primary">Previous</button>
+                        <button class="next-btn btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/axios.js"></script>
+</body>
+</html>

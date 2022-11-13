@@ -1,0 +1,93 @@
+body{
+    background: #272727;
+}
+.menu a{
+    text-decoration: none;
+    color: wheat;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search-input{
+    width: 350px;
+    height: 40px;
+    padding: 0 20px;
+    color: black;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+}
+.search-btn{
+    height: 40px;
+    width: 90px;
+    border-radius: 20px;
+    border: none;
+}
+#select, #filter{
+    width: 140px;
+    height: 30px;
+    padding: 0 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+}
+.count-img{
+    width: 250px;
+    height: 130px;
+}
+.title{
+    font-size: 23px;
+    margin: 10px 0 20px 0;
+}
+.count-item{
+    border: 2px solid wheat;
+    width: 30%;
+    height: 250px;
+    margin: 0 10px 20px ;
+    padding: 20px 10px;
+}
+
+.solo-img{
+    width: 500px;
+    height: 300px;
+}
+.dog-img{
+    width: 400px;
+}
+.pre-btn, .next-btn{
+    transform: scale(1.3);
+}
+@media (max-width: 987px){
+    .count-item{
+        width: 40%;
+    }
+}
+@media (max-width: 770px){
+    .count-item{
+        width: 100%;
+    }
+}
+@media (max-width: 590px){
+    .menu a{
+        font-size: 15px;
+        margin: 0 5px 0 0;
+    }
+}
+@media (max-width: 420px){
+    .menu a:nth-child(3){
+        display: none;
+    }
+    .menu a:nth-child(4){
+        display: none;
+    }
+}
